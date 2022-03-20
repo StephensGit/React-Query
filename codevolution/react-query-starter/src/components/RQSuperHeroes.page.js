@@ -5,9 +5,19 @@ const fetchSuperHeroes = () => {
   return axios.get(`http://localhost:3000/superheroes`)
 }
 export const RQSuperHeroesPage = () => {
+  const onSuccess = () => {
+    console.log('Perform side effect after data fetch');
+  }
+
+  const onError = () => {
+    console.log('Perform side effect after encountering error');
+  }
+
   const { isLoading, data, isError, error, isFetching, refetch } =  useQuery('super-heroes', fetchSuperHeroes,
   {
-    enabled: false
+    enabled: false,
+    onSuccess,
+    onError
   })
 
   console.log(isLoading, isFetching);
