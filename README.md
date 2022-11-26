@@ -9,7 +9,9 @@
 ## Overview
 
 Following some tutorials and practice with React Query library.
+
 React Query - [https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/]
+
 Codevolution - [https://www.youtube.com/watch?v=VtWkSCZX0Ec]
 
 
